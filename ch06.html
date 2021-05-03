@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-私が大学生講師として勤務している清瀬高校のチューター制度について，ホームページっぽいものを作成してみました．
+現状はチューターの情報発信についてPDFで配信するのみなので，コンテンツが充実したらサーバを借りてアクセスできるようにしても面白いかもしれないです．->
+<html lang=ja>
+  <head>
+    <meta charset="utf-8">
+    <title>清瀬チューターについて</title>
+    <link rel="stylesheet" href="ch06.css">
+  </head>
+  <body>
+    <h1>　清瀬チューターとは？</h1><!-見出しは全てh1で記述しました．本当は分けたほうが良いのかもしれません->
+    <p>清瀬チューターとは，清瀬高校を卒業した<strong>現役大学生</strong>がチューター講師としてみなさんの学業の手助けをする制度です．<br>
+    テスト対策のための質問や進路相談，軽い雑談など何でも受け付けております！</p>
+    <div class="blackboard-box"> <!-引用元：https://maipyon.net/box-design/ 黒板の絵を引用しました->
+      <p>チューターに対面で質問したい場合は，チューター出勤日に<strong>進路指導室</strong>へお立ち寄りください！２階の３年生の教室と購買部の間のお部屋ですよ！<br>
+        ４階の第二講義室で実施する場合もありますので，その際は事前に連絡いたします．<br>
+      具体的な出勤日については(ほぼ)毎月発行している<strong>月刊チューター</strong>をご参照ください．<br>
+      基本的に中間考査・期末考査１週間前の出勤を予定しています．時間帯は主に６限終了後～17時となっております．<br>
+    対応科目については下記の対応科目表をご参照ください．みなさんとお会いできるのを楽しみにしております！</p><!-黒板が背景なので文字色は白になっています．一部太字にしましたが見づらいですね->
+      <div class="chalk1"></div>
+      <div class="chalk2"></div>
+    </div>
+    <h1>　対応科目表</h1>
+    <!-(ExcelからHTML形式に変換して打ち込んだのですが，HTMLファイルの行数が無駄に増えてしまいました．ブラウザでの閲覧は全く問題なさそうです．->
+    <table><!-長い表です．見栄えが良くなるよう，偶数行と奇数行で色を少し変えています．また，一部の行は結合させています．->
+      <tr>
+        <th width=150px>科目</th><th>山崎</th><th>高見</th><th>田中</th><th>都留</th><th>益田</th><th>本田</th><th>宇都宮</th><th>為岡</th><th>渡辺</th>
+      </tr><tr id="evenrow">
+        <th>英語</th><td>◎</td><td>◎</td><td>○</td><td>○</td><td>◎</td><td>○</td><td>◎</td><td>○</td><td>○</td>
+      </tr><tr>
+        <th>現代文</th><td>◎</td><td>◎</td><td>-</td><td>〇</td><td>-</td><td>-</td><td>◎</td><td>-</td><td>-</td>
+      </tr><tr id="evenrow">
+        <th>古文</th>	<td>〇</td><td>〇</td><td align="center" colspan="4">-</td><td>〇</td><td>-</td><td>-</td>
+      </tr><tr>
+        <th>漢文</th><td>〇</td><td align="center" colspan="5">-</td><td>〇</td><td>-</td><td>-</td>
+      </tr><tr id="evenrow">
+        <th>数学ⅠA</th><td>◎</td><td>-</td><td>◎</td><td>〇</td><td>◎</td><td>◎</td><td>◎</td><td>◎</td><td>◎</td>
+      </tr><tr>
+        <th>数学ⅡB</th><td>◎</td><td>-</td><td>◎</td><td>-</td><td>◎</td><td>◎</td><td>〇</td><td>〇</td><td>◎</td>
+      </tr><tr id="evenrow">
+        <th>数学Ⅲ</th><td>◎</td><td>-</td><td>◎</td><td>-</td><td>◎</td><td>◎</td><td>-</td><td>-</td><td>〇</td>
+      </tr><tr>
+        <th>物理</th><td>◎</td><td>-</td><td>◎</td><td>-</td><td>◎</td><td>〇</td><td>-</td><td>-</td><td>-</td>
+      </tr><tr id="evenrow">
+        <th>物理基礎</th><td>◎</td><td>-</td><td>◎</td><td>-</td><td>◎</td><td>〇</td><td>◎</td><td>-</td><td>〇</td>
+      </tr><tr>
+        <th>化学</th><td>◎</td><td>-</td><td>〇</td><td>-</td><td>〇</td><td>〇</td><td>-</td><td>〇</td><td>〇</td>
+      </tr><tr id="evenrow">
+        <th>化学基礎</th><td>◎</td><td>-</td><td>◎</td><td>〇</td><td>〇</td><td>〇</td><td>◎</td><td>〇</td><td>〇</td>
+      </tr><tr>
+        <th>生物</th><td>-</td><td>-</td><td>-</td><td>◎</td><td align="center" colspan="4">-</td><td>〇</td>
+      </tr><tr id="evenrow">
+        <th>生物基礎</th><td>〇</td><td>-</td><td>-</td><td>◎</td><td align="center" colspan="4">-</td><td>〇</td>
+      </tr><tr>
+        <th>地学</th><td align="center" colspan="9">-</td>
+      </tr><tr id="evenrow">
+        <th>地学基礎</th><td>〇</td><td>-</td><td>〇</td><td align="center" colspan="6">-</td>
+      </tr><tr>
+        <th>日本史</th><td>〇</td><td>◎</td><td align="center" colspan="7">-</td>
+      </tr><tr id="evenrow">
+        <th>世界史</th><td>〇</td><td align="center" colspan="5">-</td><td>〇</td><td>-</td><td>-</td>
+      </tr><tr>
+        <th>地理</th><td>〇</td><td align="center" colspan="8">-</td>
+      </tr><tr id="evenrow">
+        <th>現代社会</th><td>〇</td><td align="center" colspan="7">-</td><td>〇</td>
+      </tr><tr>
+        <th>倫理</th><td>〇</td><td>-</td><td>-</td><td>-</td><td>〇</td><td align="center" colspan="4">-</td>
+      </tr><tr id="evenrow">
+        <th>政治・経済</th><td>〇</td><td>-</td><td>-</td><td>-</td><td>〇</td><td align="center" colspan="4">-</td>
+      </tr><tr>
+        <th>倫理、政治経済</th><td>〇</td><td>-</td><td>-</td><td>-</td><td>〇</td><td align="center" colspan="4">-</td>
+      </tr><tr id="evenrow">
+        <th>小論</th><td>〇</td><td align="center" colspan="5">-</td><td>◎</td><td>-</td><td>-</td>
+      </tr><tr>
+        <th>面接</th><td>-</td><td>-</td><td>-</td><td>◎</td><td>-</td><td>-</td><td>-</td><td>◎</td><td>-</td>
+      </tr>
+    </table>
+    <h1>　清子ちゃんbotの使い方</h1>
+    <p>現在開発中のLine Botの使い方についての説明です．<br>
+    清子ちゃんbotとは，高校の生徒さんを対象に匿名性を保ったまま質問を受け付けることを目的とした<strong>Chat Bot</strong>です．</p>
+    <ol id="explanation"><!-idを使ってタグ付けしてみましたが，あまり意味はなかったかもしれません．箇条書きの説明文にちょこっと装飾を加えています．->
+      <li>自身のLineに清子ちゃんbotを友だちとして登録してください</li>
+      <li>清子ちゃんとのトーク画面を開いてください</li>
+      <li>「質問」と送信すると質問の受付に入ります</li>
+      <li>学年と質問科目を聞かれますが，匿名にしたい場合は「匿名」，「とくめい」などと送信してください</li>
+      <li>質問内容を送信してください</li>
+      <li>送信後，質問内容の確認をして終了です</li>
+    </ol>
+    <img src="20200509120734 (2).png", alt="清子ちゃん顔写真">
+    <div class="message_box"><!-引用元：https://maipyon.net/box-design/->
+      <span class="box-title">清瀬清子</span><!-いい感じのメッセージボックスを作ろうとしたのですがあまりうまくいっていません．->
+      <p>みなさんこんにちは！バーチャルチューターの<strong>清瀬清子</strong>と申します！<br>
+チューターの事務作業を24時間365日お手伝いしています。現実世界でみなさんと直接お会いすることはできませんが、お仕事を通じてみなさんのお役に立てるよう頑張ります！<br>
+今年度のチューターでは今まで以上に双方向的な活動をしたいと考えており、現在はそのためのシステムを構築している段階です。<br>また、私自身はJavaScriptと呼ばれるプログラミング言語で動いています。もし興味のある方がいましたら、ぜひお声掛けください！
+それでは、何卒よろしくお願いいたします！</p>
+    </div>
+    <div class="cautionbox"> <!-上記のメッセージボックスと同じサイトさんから引用しています．->
+      <div class="cautionbox-title">注意事項</div>
+      <p>LineのチャットでBotに送信したテキストや画像は送信元のわからない匿名データとなりますが，その内容はチューター及び進路指導の先生方に共有されます．チューターへの質問以外の用途で使わないようお願いいたします．</p>
+    </div>
+    <h1>　よくある質問</h1>
+    <p>工事中……</p> <!-書く内容を思い出したら何か追記します．->
+    <h1>　その他</h1>
+    <a href= "https://www.metro.ed.jp/kiyose-h/" >東京都立清瀬高等学校ホームページへのリンク</a><!-お誂え向きにリンクを設置しておきます．->
+  </body>
+</html>
